@@ -1,0 +1,22 @@
+{
+  "name": "postgresql-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkilgour/postgresql-exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkilgour/postgresql-exercise/issues"
+  },
+  "homepage": "https://github.com/tkilgour/postgresql-exercise#readme",
+  "dependencies": {
+    "pg": "^6.1.2"
+  }
+}
