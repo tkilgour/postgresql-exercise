@@ -16,7 +16,7 @@ const db = knex({
   }
 });
 
-db.select()
+var query = db.select()
   .from('famous_people')
   .where('last_name', 'ilike', inputForLike)
   .orWhere('first_name', 'ilike', inputForLike)
@@ -26,5 +26,7 @@ db.select()
       console.log(`- ${results[result].id}: ${results[result].first_name} ${results[result].last_name}, born '${results[result].birthdate.toISOString().slice(0,-14)}'`);
     }
   });
+
+console.log(query.toSQL());
 
 db.destroy();
